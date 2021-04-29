@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./public//favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="./css/root.css">
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/layout.css">
+  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="./css/common.css">
+  <title>Typing Speed Test</title>
+</head>
+
+<body>
+  <div id="root">
+    <header>
+      <div class="flex flex-row flex-al-c">
+        <img src="./public/logo.png" style="height: calc(48px - 1rem);" />
+        <h3>Typing Speed Test</h3>
+      </div>
+    </header>
+
+    <main>
+      <div class="flex flex-row flex-pad-8">
+        <div class="flex-item flex-item-8">
+          <div class="flex flex-row">
+            <h4>
+              Type the text below as fast as you can in the Text Area
+            </h4>
+            <div class="info">
+              <div class="info-popup">Time will be started after you start typing.</div>
+            </div>
+          </div>
+          <div class="sample-text-container">
+            <div id="sample-text-stats">
+              Total Words: <span id="total-words"></span> |
+              Total Characters: <span id="total-chars"></span>
+            </div>
+            <p id="sample-text">
+            </p>
+          </div>
+        </div>
+        <div class="flex-item flex-item-8">
+          <form id="type-form" class="flex flex-col flex-al-fs" onsubmit="return false;">
+            <label for="text-input-area">
+              <strong>Text Area</strong> |
+              Elapsed time
+              <span id="minute-elem">00</span>:<span id="second-elem">00</span>
+            </label>
+            <textarea id="text-input-area" name="textInputArea" class="text-input wd-100" name="typeArea"
+              rows="10"></textarea>
+            <button class="button-1" id="reset-button">Reset</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="result-container">
+        <h4>Result</h4>
+        <div>Speed: <span id="result-speed">N/A</span></div>
+        <div>Average Word Hit: <span id="result-avg-word">N/A</span></div>
+        <div>Characters Hit: <span id="result-char-hit">N/A</span></div>
+        <div>Characters Miss: <span id="result-char-miss">N/A</span></div>
+        <div>Accuracy: <span id="result-accuracy">N/A</span></div>
+      </div>
+    </main>
+  </div>
+
+  <script src="./js/constants.js"></script>
+  <script src="./js/utils/Timer.js"></script>
+  <script src="./js/utils/SampleText.js"></script>
+  <script src="./js/utils/TextArea.js"></script>
+  <script src="./js/index.js"></script>
+</body>
+
+</html>

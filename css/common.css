@@ -1,0 +1,32 @@
+.text-input {
+  padding: 0.5rem;
+  border: 1px solid var(--blue-a2);
+  border-radius: 0.25rem;
+  margin: 0.25rem 0;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.text-input:focus {
+  outline: none;
+  box-shadow: 0 0 0.125rem 0.125rem var(--blue-a4);
+}
+
+.button-1 {
+  background-color: var(--blue);
+  color: white;
+  font-weight: 500;
+}
+.button-1:hover,.button-1:focus {
+  outline: none;
+  box-shadow: 0 0 0.125rem 0.125rem var(--blue-a4);
+}
+.button-1:active {
+  box-shadow: none;
+  background-color: var(--blue-a2);
+}
+.button-1:disabled {
+  box-shadow: none;
+  background-color: var(--gray-1);
+  cursor: not-allowed;
+}

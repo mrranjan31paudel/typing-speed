@@ -1,0 +1,14 @@
+:root {
+  --flex-item-width-factor: 6.25;
+  --blue: #4682b4;
+  --blue-a2: #4683b4c7;
+  --blue-a3: #4683b48d;
+  --blue-a4: #4683b46c;
+  --red: #dc143c;
+  --red-a2: #dc143cc7;
+  --red-a3: #dc143c8d;
+  --red-a4: #dc143c6c;
+  --gray-1: #808080c7;
+  --gray-2: #8080808d;
+  --gray-3: #8080806c;
+}
