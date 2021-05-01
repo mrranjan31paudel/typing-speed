@@ -12,6 +12,13 @@
   box-shadow: 0 0 0.125rem 0.125rem var(--blue-a4);
 }
 
+.text-small {
+  font-size: 0.75rem;
+} 
+.text-dim {
+  color: var(--gray-1);
+}
+
 .button-1 {
   background-color: var(--blue);
   color: white;
